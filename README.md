@@ -93,17 +93,6 @@ enum directions {
 
 ```
 
-#### Unions
-
-A [`union`](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md#item-union-variant-but-with-no-case-names) is a specialized `variant` where all of the cases have unique payload types and the cases are implicitly assigned numeric names.
-
-```wit
-union maybe-multi-string {
-    string,
-    list<string>,
-}
-```
-
 #### Options
 
 An `option<T>` is a specialized `variant` with `none` and `some(T)` cases.
